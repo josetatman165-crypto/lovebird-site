@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 | 牡丹鹦鹉图鉴</title>
+  <meta name="description" content="关于牡丹鹦鹉图鉴网站、饲养基础知识与上线说明。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🦜</span>
+        <span>牡丹鹦鹉图鉴</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="varieties.html">品种列表</a></li>
+          <li><a href="about.html" class="active">关于</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 1.5rem;">
+      <div class="container">
+        <h1>关于本站</h1>
+        <p>一个面向爱好者的牡丹鹦鹉品种图鉴，帮助认识常见羽色变异。</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container about-content">
+
+        <article class="about-block">
+          <h2>网站简介</h2>
+          <p>
+            「牡丹鹦鹉图鉴」收录了 6 种常见的桃脸牡丹鹦鹉（<em>Agapornis roseicollis</em>）羽色变异，
+            包括原始绿、黄化、白脸、白脸蓝、紫罗兰和珍珠。本站旨在帮助新手鸟友认识不同品种的外观特征，
+            便于选购、交流与学习。
+          </p>
+        </article>
+
+        <article class="about-block">
+          <h2>饲养基础知识</h2>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-icon">🌾</div>
+              <h3>饮食</h3>
+              <p>以优质鹦鹉粮为主，搭配新鲜蔬果。避免巧克力、牛油果、高盐高糖食物。</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🏠</div>
+              <h3>笼舍</h3>
+              <p>笼体宜宽敞，配备栖木、玩具。每日保证安全放飞时间，促进运动。</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💊</div>
+              <h3>健康</h3>
+              <p>羽色与品种无关健康。关注精神、粪便、羽毛状态，定期清洁，必要时就医。</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h3>互动</h3>
+              <p>牡丹鹦鹉聪明亲人，需每日陪伴。单只饲养应给予足够关注，或考虑成对（需了解配对习性）。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="about-block">
+          <h2>图片文件说明</h2>
+          <p>品种图片存放在 <code>images/</code> 文件夹，已使用清晰命名：</p>
+          <ul class="about-list">
+            <li><code>normal-green.jpg</code> — 原始绿</li>
+            <li><code>lutino.jpg</code> — 黄化</li>
+            <li><code>white-faced.jpg</code> — 白脸</li>
+            <li><code>blue.jpg</code> — 白脸蓝</li>
+            <li><code>violet.jpg</code> — 紫罗兰</li>
+            <li><code>opaline.png</code> — 珍珠</li>
+          </ul>
+          <p class="about-note">替换某品种照片时，保持文件名不变即可，网站会自动更新。</p>
+        </article>
+
+        <article class="about-block">
+          <h2>上线发布（GitHub Pages）</h2>
+          <p>本站为纯静态网页，可免费发布到 GitHub Pages。项目已初始化 Git，按以下步骤操作：</p>
+          <ol class="about-list about-steps">
+            <li>注册 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 账号（若还没有）</li>
+            <li>在 GitHub 新建仓库，名称如 <code>lovebird-site</code>，选 Public</li>
+            <li>在本项目文件夹打开终端，执行：
+              <pre class="code-block">git remote add origin https://github.com/你的用户名/lovebird-site.git
+git branch -M main
+git push -u origin main</pre>
+            </li>
+            <li>进入仓库 → Settings → Pages → Source 选 <strong>Deploy from a branch</strong></li>
+            <li>Branch 选 <code>main</code>，文件夹选 <code>/ (root)</code>，保存</li>
+            <li>等待 1～2 分钟，访问 <code>https://你的用户名.github.io/lovebird-site/</code></li>
+          </ol>
+        </article>
+
+        <article class="about-block">
+          <h2>免责声明</h2>
+          <p>
+            本站内容仅供爱好者学习交流，不构成专业兽医或 breeding 建议。
+            品种识别以实际个体为准，图片与描述可能存在差异。转载或使用本站图片请注意版权。
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="index.html">← 返回首页</a></p>
+      <p style="margin-top: 0.5rem;">牡丹鹦鹉图鉴 · 仅供爱好者学习交流</p>
+    </div>
+  </footer>
+
+</body>
+</html>
